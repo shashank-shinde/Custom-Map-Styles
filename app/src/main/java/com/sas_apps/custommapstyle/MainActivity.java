@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+//         Intent intent = new Intent(MainActivity.this, MapsActivity.class);
         switch (view.getId()) {
             case R.id.buttonAubergine:
                 intent.putExtra(getResources().getString(R.string.app_name), "Aubergine");
