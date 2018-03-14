@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Custom Map Style</string>
     <string name="title_activity_maps">Map</string>
+    <string name="silverTheme">Silver</string>
+    <string name="retroTheme">Retro</string>
+    <string name="darkTheme">Dark</string>
+    <string name="nightTheme">Night</string>
+    <string name="aubergineTheme">Aubergine</string>
 </resources>

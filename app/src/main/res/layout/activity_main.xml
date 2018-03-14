@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sas_apps.custommapstyle.MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonSilver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:onClick="onClick"
+        android:text="@string/silverTheme"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonRetro"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRetro"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRetro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:onClick="onClick"
+        android:text="@string/retroTheme"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNight"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAubergine"
+        app:layout_constraintStart_toEndOf="@+id/buttonSilver" />
+
+
+    <Button
+        android:id="@+id/buttonDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:onClick="onClick"
+        android:text="@string/darkTheme"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonNight"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonNight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="2dp"
+        android:onClick="onClick"
+        android:text="@string/nightTheme"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBlueWater"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRetro" />
+
+    <Button
+        android:id="@+id/buttonAubergine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:onClick="onClick"
+        android:text="@string/aubergineTheme"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonRetro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonRetro" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Select Theme"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDesert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desert"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonNight"
+        app:layout_constraintStart_toStartOf="@+id/buttonAubergine" />
+
+    <Button
+        android:id="@+id/buttonBlueWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Blue Water"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonBrowns"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBrowns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Browns"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonAvocado "
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAvocado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="324dp"
+        android:layout_marginStart="11dp"
+        android:text="Avocado "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonBrowns" />
+
+
+</android.support.constraint.ConstraintLayout>
